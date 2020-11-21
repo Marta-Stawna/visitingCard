@@ -1,0 +1,414 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #3E3E3E;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lottie {
+  align-items: flex-end;
+  align-content: flex-end;
+  width: 80vh;
+  height: calc(100vh - 100px);
+}
+
+.main-content {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.navtop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  font-family: 'Muli', sans-serif;
+  -webkit-box-shadow: 1px 1px 5px 2px #FFF; 
+  box-shadow: 1px 1px 5px 2px #FFF;
+}
+
+.navtop-content {
+  color: #fff;
+  background-color: #000;
+  box-shadow:0 .2rem .5em 0 rgba(0,0,0,0.16),0 .2rem 1rem 0 rgba(0,0,0,0.12);
+  white-space: normal;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navtop-item {
+  padding: 0.5rem 2.6rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navtop-item-logo {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+
+.navtop-item:hover {
+  color: rgba(45,45,45,0.98);;
+  height: 100%;
+  transition: color 4s;
+}
+
+.menu {
+  display: none;
+}
+
+.first-screen {
+  /* background-image: url(./bc.jpg); */
+  background-color: #000;
+  width: 100%;
+  height: calc(100vh - 64px);
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #fff;
+}
+
+.first-screen-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  width: 50%;
+}
+
+.show-block {
+  display: block;
+  width: 100vh;
+  height: 100vh;
+  background-color: red;
+  z-index: 9999;
+}
+
+.first-screen button {
+  margin-top: 20px;
+  -webkit-appearance: none;
+  background-color: rgb(248, 41, 73);
+  width: 275px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: 0;
+  cursor: pointer;
+  line-height: 1.2857;
+  letter-spacing: 1px;
+  min-height: 50px;
+  border-radius: 25px;
+  padding: 16px 20px;
+  /* animation: animationLeft 4s 0.2s both; */
+  margin-top: 2rem;
+}
+
+.offer-content, .location {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: -2rem;
+}
+
+.offer-fizjo, .offer-reha {
+  width: 50%;
+  padding: 0 3rem;
+  color: #000;
+  opacity: 1;
+}
+
+.location {
+  max-width: 100%;
+}
+
+.location-trzcianka, .location-poznan {
+  margin-top: 20rem;
+  padding-left: 1rem;
+  width: 50%;
+  overflow: hidden;
+}
+
+.about, .offer, .contact {
+  max-width: 60rem;
+  padding: 5rem 1rem;
+  text-align: justify;
+  margin: auto;
+}
+
+#about p {
+  font-size: 20px;
+}
+
+.offer {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.offer::before {
+  background-image: url(run.jpeg);
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.4;
+  background-size: cover;
+}
+
+.offer-header, .about-header, .contact-header {
+  text-align: center;
+  margin-right: 5rem;
+  width: 100%;
+}
+
+.contact-subheader {
+  text-align: center;
+  opacity: 0.60;
+  margin-right: 5rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  color: grey;
+  text-align: center;
+  padding: 1em;
+  background-color: #b3b3b3;
+  letter-spacing: .1rem;
+}
+
+.contact {
+  position: relative;
+  background-image: url(tlo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 45%;
+}
+
+.contact-data {
+  padding: 0.5rem;
+}
+
+.contact img {
+  width: 15rem;
+  height: 15rem;
+  opacity: .7;
+  margin-left: 5rem;
+}
+
+.contact-content {
+  display: inline-block;
+  flex-grow: 1;
+  position: absolute;
+  top: 15rem;
+  left: 10rem;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.alfizjo {
+  width: 10rem;
+  height: 10rem;
+}
+
+.arrow {
+  display: none;
+}
+
+@media screen and (max-width:650px) {
+
+  .container {
+    font-size: 0.7em;
+  }
+
+  .contact-content {
+    display: inline-block;
+    flex-grow: 1;
+    position: absolute;
+    top: 15rem;
+    left: 2rem;
+  }
+
+  .navtop {
+    display: block;
+    position: static;
+    width: 100%;
+    z-index: 2;
+    color: #fff;
+    background-color: #33508a;
+  }
+
+  .navtop-content {
+    display: none;
+    font-size: .7em;
+    width: 100%;
+    padding: 0.8em 0;
+  }
+
+  .navtop-item {
+    display: block;
+    padding: .8rem;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .navtop-item:hover {
+    transition: all 1s;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+    padding: 0.5em 1em;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.7em;
+  }
+
+  .about, .offer, .contact {
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .offer-content, .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 .7rem;
+  }
+
+  .main-content {
+    margin: 0;
+  }
+
+  .offer-header {
+    margin-bottom: 2em;
+  }
+
+  .offer-reha, .offer-fizjo {
+    width: 100%;
+    padding: 0;
+  }
+
+  .offer-fizjo h3, .offer-reha h3 {
+    display: none !important;
+  }
+
+  .location {
+    max-width: 100%;
+  }
+
+  .location-trzcianka, .location-poznan {
+    margin-top: 0;
+    padding: 1rem 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .contact-content {
+    flex-grow: 1;
+    margin-top: 1em;
+    position: static;
+    margin-bottom: 7em;
+  }
+
+  .contact {
+    position: static;
+    background-image: url(tlo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 18%;
+    background-position: 0 1em;
+  }
+
+  .contact-data {
+    margin-left: 2em;
+  }
+
+  .alfizjo {
+    width: 5em;
+    height: 5em;
+  }
+
+  .sygido {
+    height: 2em;
+  }
+
+  .arrow {
+    display: block;
+    position: fixed;
+    top: calc(100% - 5em);
+    left: calc(100% - 6em);
+    width: 4em;
+    height: 3.5em;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 2s;
+  }
+
+  .arrow:hover {
+    background-color: #99ccff;
+  }
+}
+
+
+@keyframes animationLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* general */
+
+.flex-row {
+  display: flex;
+  padding: 0 100px;
+}
+
+.flex-row > * {
+  flex-basis: 50%;
+}
+
+img {
+  width: 500px;
+  height: calc(100vh - 100px);
+}
